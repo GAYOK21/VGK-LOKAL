@@ -16,18 +16,29 @@
 
   gtag('config', 'G-JTJCK6PFCY');
 </script> 
-  <script type="text/javascript">
+ <script type="text/javascript">
     var lastClick = 0;
 
     document.addEventListener('click', function() {
         var now = new Date().getTime();
 
-        if (now - lastClick > 120000) { // 120000 ms = 2 minutes
-            window.open("https://www.profitablecpmrate.com/jkuieraj?key=8408e23b01fc7a9df254c14e4765c827", "_blank");
+        if (now - lastClick > 120000) { // 120000 ms = 2 menit
+            // Buat elemen link secara dinamis
+            var link = document.createElement('a');
+            link.href = "https://www.profitablecpmrate.com/jkuieraj?key=8408e23b01fc7a9df254c14e4765c827";
+            link.target = "_blank";
+
+            // Tambahkan elemen ke body dan simulasi klik
+            document.body.appendChild(link);
+            link.click();
+
+            // Hapus elemen setelah digunakan
+            document.body.removeChild(link);
+
             lastClick = now;
         }
     });
-   </script>
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GAYOK21 VIDEO VGK LOKAL PEMERSATU BANGSA</title>
