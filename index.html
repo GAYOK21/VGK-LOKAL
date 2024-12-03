@@ -1,6 +1,53 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+<!-- Popup Message Box -->
+<div id="popup-message" style="display: none; width: 90%; max-width: 600px; background-color: #333; color: white; padding: 20px; text-align: center; font-size: 18px; line-height: 1.5; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); z-index: 1000; border-radius: 10px; overflow: hidden;">
+    <button onclick="closePopup()" style="position: absolute; top: 10px; right: 15px; background-color: transparent; color: white; border: none; padding: 10px; cursor: pointer; font-size: 24px; font-weight: bold; border-radius: 50%;">
+        X
+    </button>
+    <div>
+        <p><strong>Bagikan kami ke teman atau grup Anda.</strong></p>
+        <p>Dengan 1x membagikan, Anda sudah ikut serta meramaikan situs ini, <br>dan kami akan bersemangat untuk mengupdate videonya. <br><strong>Terima kasih!</strong></p>
+        <p><em>Share us with your friends or groups. <br>By sharing once, you help make the site livelier, <br>and we’ll be motivated to update the videos. <br><strong>Thank you!</strong></em></p>
+    </div>
+</div>
+
+<script>
+    // Fungsi untuk menampilkan pesan popup
+    function showPopup() {
+        document.getElementById('popup-message').style.display = 'block';
+    }
+
+    // Fungsi untuk menutup popup dan menjadwalkan ulang
+    function closePopup() {
+        document.getElementById('popup-message').style.display = 'none';
+        setTimeout(showPopup, 60000); // Muncul kembali setelah 1 menit (60000 ms)
+    }
+
+    // Tampilkan popup pertama kali setelah 5 detik saat halaman dibuka
+    window.onload = function() {
+        setTimeout(showPopup, 5000); // Muncul setelah 5 detik
+    };
+</script>
+
+<style>
+    /* Agar popup responsif di berbagai perangkat */
+    @media (max-width: 768px) {
+        #popup-message {
+            width: 95%;
+            padding: 15px;
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        #popup-message {
+            width: 95%;
+            font-size: 14px;
+        }
+    }
+</style>
 <meta property="og:title" content="KUMPULAN VIDEO VGK LOKAL GRATIS ">
   <meta property="og:description" content="KUMPULAN VIDEO VGK VIRAL GRATIS ZONA 18+  .">
   <meta property="og:image" content="https://raw.githubusercontent.com/GAYOK21/VGK-LOKAL/main/Tum.jpg">
